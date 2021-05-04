@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+
+
+    <script type="text/javascript">
+        function Sumar() {
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+
+            var sum = parseInt(n1) + parseInt(n2);
+
+            alert("El resultado de la suma es " + sum);
+        }
+
+        function Restar() {
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+
+            var res = parseInt(n1) - parseInt(n2);
+
+            alert("El resultado de la resta es " + res);
+        }
+
+        function Multiplicar() {
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+
+            var mul = parseInt(n1) * parseInt(n2);
+
+            alert("El resultado de la multiplicación es " + mul);
+        }
+
+        function Dividir() {
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+
+            var div = parseFloat(n1) / parseFloat(n2);
+
+            alert("El resultado de la división es " + div);
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <form>
+
+        <div class="form-group">
+
+            <label for="num1">Número 1</label>
+
+            <input type="number" class="form-control" id="num1" name="num1" />
+
+        </div>
+
+
+
+        <div class="form-group">
+
+            <label for="num2">Número 2</label>
+
+            <input type="number" class="form-control" id="num2" name="num2" />
+
+        </div>
+
+        <br>
+
+        <button type="submit" class="btn btn-primary" onclick="Sumar()">Sumar</button>
+        <button type="submit" class="btn btn-primary" onclick="Restar()">Restar</button>
+        <button type="submit" class="btn btn-primary" onclick="Multiplicar()">Multiplicar</button>
+        <button type="submit" class="btn btn-primary" onclick="Dividir()">Dividir</button>
+
+    </form>
+
+</body>
+
+</html>
